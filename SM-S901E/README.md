@@ -1,7 +1,71 @@
 # Samsung S22 - Australia(XSA)
 #### Build: SP1A.210812.016.S901EXXS2AVDD
 
-Features Removed/Broken:
+Potentially Important Features Removed/Broken:
+- OMA Client Provisioning (Can be used as an attack vector) [com.wsomacp]
+- Android Auto (Can be reinstalled from Play Store afaik) [com.google.android.projection.gearhead]
+- Google Text-to-speech [com.google.android.tts]
+- Live Transcribe & Sound Notifications (Used for people with hearing loss) [com.google.audio.hearing.visualization.accessibility.scribe]
+- Caller Information (Call data is sent to a company with a scary privacy policy - Recommended to remove) [com.hiya.star, com.knox.vpn.proxyhandler, com.samsung.android.smartcallprovider, com.samsung.crane]
+- Built-in Microsoft Services (Can be reinstalled from Play Store) [com.microsoft.appmanager, com.microsoft.skydrive, ]
+- Digital Wellbeing [com.samsung.android.forest]
+- Samsung Account and Services [com.samsung.android.mobileservice, com.samsung.android.scloud, com.samsung.android.shortcutbackupservice, com.sec.android.app.billing]
+- Samsung Galaxy Store [com.sec.android.app.samsungapps]
+- Samsung Kids Home [com.samsung.android.kidsinstaller]
+- Samsung Game Services [com.samsung.android.game.gamehome, com.samsung.android.game.gamehome, com.samsung.android.game.gametools, com.samsung.android.gos]
+- Samsung Find-My-Mobile [com.samsung.android.fmm]
+- Samsung Knox [com.samsung.aasaservice, com.samsung.android.bbc.bbcagent, com.samsung.android.knox.analytics.uploader, com.samsung.android.knox.attestation, com.samsung.android.knox.containeragent, com.samsung.android.knox.containercore, com.samsung.android.knox.pushmanager, com.samsung.android.mdm, com.samsung.klmsagent, com.samsung.knox.securefolder, com.samsung.ucs.agent.ese, com.sec.enterprise.knox.cloudmdm.smdms, com.sec.enterprise.mdm.services.simpin, com.skms.android.agent, ]
+- Samsung Pay (Use Google Pay :p) [com.samsung.android.spayfw]
+- Samsung Pass [com.samsung.android.authfw, com.samsung.android.samsungpass, com.samsung.android.samsungpassautofill]
+- Samsung QuickShare [com.samsung.android.aware.service]
+- Samsung SmartView (Used for casting content to Samsung TVs) [com.samsung.android.allshare.service.mediashare, 
+- Samsung SmartThings [com.samsung.android.beaconmanager, com.samsung.android.easysetup, com.samsung.android.mdecservice]
+- Samsung SmartSwitch [com.samsung.android.smartswitchassistant, com.sec.android.easymover.agent]
+- Samsung DualMessenger [com.samsung.android.da.daagent]
+- Edge Panel [com.samsung.android.app.clipboardedge, com.samsung.android.app.cocktailbarservice, com.samsung.android.app.taskedge, com.samsung.android.service.peoplestripe, com.sec.android.app.quicktool
+- Bixby [com.samsung.android.app.reminder, com.samsung.android.app.routines, com.samsung.android.app.settings.bixby, com.samsung.android.app.spage, com.samsung.android.bixby.agent, com.samsung.android.bixby.service, com.samsung.android.bixby.wakeup, com.samsung.android.bixbyvision.framework, com.samsung.android.svoiceime, com.samsung.android.visionintelligence, com.samsung.systemui.bixby2
+- RCS (Rich Communication Services) [com.samsung.rcs]
+- Samsung LED Cover Case [com.sec.android.cover.ledcover]
+- One Hand Mode [com.sec.android.easyonehand]
+
+
+Other Features Removed/Broken:
+- Virtual SIM? [com.sec.vsim.ericssonnsds.webapp]
+- SwiftKey Factory Settings (Changes settings if you install SwiftKey) [com.swiftkey.swiftkeyconfigurator]
+- User Manual [com.sec.android.widgetapp.webmanual]
+- Favourite Contacts Widget [com.sec.android.widgetapp.easymodecontactswidget]
+- Unified Daemon [com.sec.android.daemonapp]
+- FeliCa RFID (Only useful in Japan afaik) [com.sec.android.app.applinker]
+- Samsung Magnifier [com.sec.android.app.magnifier]
+- Samsung StoryService (Creates movies from photos in your Gallery) [com.samsung.storyservice]
+- Samsung Safety Information ("Don't eat your phone") [com.samsung.safetyinformation]
+- Samsung Content Recognition [com.samsung.mlp]
+- Hidden Settings & Debug Menus [com.samsung.ipservice, com.sec.android.app.bluetoothtest, com.sec.android.app.datacreate, com.sec.android.app.factorykeystring, com.sec.android.app.hwmoduletest, com.sec.android.app.parser, com.sec.android.app.servicemodeapp, com.sec.android.rilservicemodeapp, com.sec.app.rilerrornotifier, com.sec.bcservice, com.sec.epdgtestapp, com.sec.factory, com.sec.factory.camera, com.sec.hiddenmenu, com.sec.imslogger, com.sec.location.nsflp2, com.sec.modem.settings, com.sec.phone, com.sem.factoryapp, 
+- Gallery Face Detection [com.samsung.faceservice]
+- DEX UI (S22 doesn't support Dex) [com.samsung.desktopsystemui, com.sec.android.app.desktoplauncher, com.sec.android.app.dexonpc, com.sec.android.desktopmode.uiservice]
+- Samsung Deskphone Manager [com.samsung.android.sdm.config]
+- Multi Devices Experience [com.samsung.android.mdx, com.samsung.android.mdx.kit]
+- Samsung Telemetry [com.samsung.android.dqagent, com.samsung.android.ipsgeofence, com.samsung.android.net.wifi.wifiguider, com.samsung.android.networkdiagnostic, com.samsung.android.rubin.app, com.samsung.android.samsungpositioning, com.samsung.android.svcagent, com.sec.android.diagmonagent, 
+- Samsung Dynamic Lockscreen (Changes your wallpaper randomly?) [com.samsung.android.dynamiclock, 
+- Camera Stickers/AR Effects (Samsungs Snapchat Lens Clone) [com.samsung.android.app.camera.sticker.facearavatar.preload, com.samsung.android.ardrawing, com.samsung.android.aremoji, com.samsung.android.aremojieditor, com.samsung.android.arzone, com.samsung.android.livestickers, com.samsung.android.stickercenter, com.sec.android.mimage.avatarstickers, 
+- Qualcomm Telemetry [com.qualcomm.qti.smq]
+- S-Pen (The phone doesn't even have one lol) [com.samsung.android.aircommandmanager, com.samsung.android.sdk.handwriting, 
 - MIDI over Bluetooth [com.android.bluetoothmidiservice]
 - Call Logs Backup/Restore [com.android.calllogbackup]
-- Photo Screensavers (Daydream, not wallpaper)
+- Photo Screensavers (Daydream, not wallpaper) [com.android.dreams.phototable]
+- Android Easter Egg [com.android.egg]
+- "Ok Google" Detection [com.android.hotwordenrollment.okgoogle, com.android.hotwordenrollment.xgoogle]
+- Google Chrome "Partner Bookmarks" (Assuming this just bakes in Samsung shit into Chrome?) [com.android.providers.partnerbookmarks, com.sec.android.app.chromecustomizations]
+- System Tracing (Mostly used for development) [com.android.traceur]
+- Dictionary? (Used for multi-lang things maybe?) [com.diotek.sec.lookup.dictionary]
+- Facebook (You can reinstall as a user app, this shit doesn't need to be a system app.) [com.facebook.appmanager, com.facebook.system, com.facebook.services]
+- Restoring from Google Account (Only used during OOBE) [com.google.android.apps.restore]
+- Google Duo (You can reinstall as a user app) [com.google.android.apps.tachyon]
+- Android System Intelligence (I don't use the features it provides) [com.google.android.as]
+- App Crash Reporting? (Not well documented) [com.google.android.feedback]
+- Google Location History (Why do you need it?) [com.google.android.gms.location.history]
+- Google Search Box (Just use a web shortcut lol - Also breaks Google Sound Search) [com.google.android.googlequicksearchbox]
+- OOBE (You have to setup the device to debloat it so, you don't need this) [com.google.android.onetimeinitializer, com.sec.android.app.secsetupwizard, com.sec.android.app.setupwizardlegalprovider]
+- Google Partner Setup (Not used for setup, enables some apps to interact with your Google Account?) [com.google.android.partnersetup]
+- Print Service "Recommendation" (Doesn't actually do anything) [com.google.android.printservice.recommendation]
+- Galaxy Friends (No idea what it is) [com.samsung.android.mateagent]
